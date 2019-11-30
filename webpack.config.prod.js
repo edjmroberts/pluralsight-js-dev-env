@@ -19,7 +19,7 @@ export default {
         filename: '[name].[chunkhash].js'
     },
     plugins: [
-        // Generate an external css file with  a hash in the filename
+        // Generate an external css file with a hash in the filename
         new ExtractTextPlugin('[name].[contenthash].css'),
 
         // Hash the files to use Md5 so that their names change when the content changes
@@ -51,7 +51,7 @@ export default {
             trackJsToken: '34a7eb8cfcc549218db39907d9c6d0f1'
         }),
 
-        // Elminiate duplicate packages when generating bundle
+        // Eliminate duplicate packages when generating bundle
         new webpack.optimize.DedupePlugin(),
 
         // Minify JS
